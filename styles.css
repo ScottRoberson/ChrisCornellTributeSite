@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(images/background.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
@@ -11,6 +12,7 @@ header {
   background-color: #000;
   width: 100%;
   height: 60px;
+  position: fixed;
 }
 
 .navbar {
@@ -18,12 +20,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 
 .logo {
   height: 18px;
   width: 200px;
+  margin-left: 50px;
 }
 
 .nav-links {
@@ -31,15 +33,85 @@ header {
   color: #979291;
   font-size: 14px;
   justify-content: space-between;
-  border: 1px solid pink;
   width: 800px;
   padding: 0 15px;
+  margin-right: 50px;
 }
 
 .nav-item {
   list-style-type: none;
 }
 
+.nav-item:hover {
+  color: white;
+}
+
 .nav-item:first-child {
   color: white;
+}
+
+main {
+  width: 600px;
+  float: right;
+  overflow-x: hidden;
+  margin: 80px 10px 0 0;
+}
+
+.hof-vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.hof-img {
+  width: 425px;
+  height: 425px;
+  margin-bottom: 10px;
+}
+
+.rock-vote-btn {
+  background-color: #337ab7;
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.articles {
+  width: 575px;
+  height: auto;
+  background-color: rgba(0, 0, 0, .70);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffff;
+  padding-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #979291;
+}
+
+a:hover {
+  color: #ffff;
+  cursor: pointer;
+}
+
+h1,
+p {
+  width: 475px;
+}
+
+.article-images {
+  width: 475px;
+  height: 300px;
+}
+
+.date {
+  font-size: 14px;
 }
