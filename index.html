@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chris Cornell Site</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="test.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto:300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css"
     integrity="sha256-PtBWX+v2TI0iuYI3rZrQft5kfd3ZkdPd8iVMZoE1rxE=" crossorigin="anonymous" />
@@ -14,8 +15,11 @@
 
 <body>
   <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="">
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav class="navbar">
-      <img class="logo" src="images/logo.png" alt="">
       <ul class="nav-links">
         <li class="nav-item">News</li>
         <li class="nav-item">Music</li>
@@ -26,6 +30,9 @@
         <li class="nav-item">Store</li>
       </ul>
     </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
   </header>
   <main>
     <div class="hof-vote">
